@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Bebas+Neue&family=Gloock&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.imagem_logo_mobile{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    background-color: #3F0C22;
+    flex-direction:row;
+    gap: 10px;
+    font-family: 'Gloock', serif;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.item-navbar{
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.imagem_logo{
+    height: 60px;
+}
+
+#conteudo-principal{
+    background: url(/images/background.svg) no-repeat center center;
+    height: 92vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-central{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 700px;
+    height: 500px;
+    background-color: #3F0C22;
+    border-radius: 5%;
+    row-gap: 40px;
+    margin: 10px;
+    padding: 10px;
+    opacity: 90%;
+}
+
+.caixa-itens{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    row-gap: 40px;
+    opacity: none;
+}
+
+.titulo-principal{
+    color: white;
+    font-size: 30px;
+    font-family: 'Antonio', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 50px;
+}
+
+.botao-whatsapp{
+    background-color: #12041D;
+    color: white;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 1px 1px 5px 1px black;
+    cursor: pointer;
+}
+
+.botao-telegram{
+    background-color: #12041D;
+    color: white;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 1px 1px 5px 1px black;
+    cursor: pointer;
+}
+
+.botao-pagseguro{
+    background-color: #12041D;
+    color: white;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 1px 1px 5px 1px black;
+    cursor: pointer;
+
+}
+
+.botao-telegram:hover{
+    width: 225px;
+    height: 65px;
+    font-size: 31px;
+}
+
+.botao-whatsapp:hover{
+    width: 225px;
+    height: 65px;
+    font-size: 31px;
+}
+
+.botao-pagseguro:hover{
+    width: 225px;
+    height: 65px;
+    font-size: 31px;
+}
+
+.rodape{
+    display: flex;
+    font-family: 'Antonio', sans-serif;
+    background-color:#3F0C22;
+    color: white;
+    height: 60px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .navbar{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem_logo{
+        display: none;
+    }
+
+    .imagem_logo_mobile{
+        height: 45px;
+        display: flex;
+    }
+}
