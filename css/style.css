@@ -51,6 +51,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
     transition:0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 5;
 }
 
 .dropdown_menu.open{
@@ -92,12 +93,12 @@ body{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     text-align:left;
 }
 
 .texto-principal{
-    padding-left: 200px;
+    padding: 200px;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .titulo-principal{
@@ -131,7 +132,7 @@ body{
     font-family: 'Antonio', sans-serif;
     background-color:#3F0C22;
     color: white;
-    height: 60px;
+    height: 6vh;
     font-size: 13px;
     letter-spacing: 2px;
     align-items: center;
@@ -158,4 +159,13 @@ body{
     .dropdown_menu{
         display: block;
     }
+
+    .texto-principal{
+        padding: 100px;
+        backdrop-filter: blur(5px);
+        background: rgba(63, 12, 34, 0.3);
+        border-radius: 60px;
+        scale: 0.8;
+    }
+
 }
