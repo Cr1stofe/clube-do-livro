@@ -7,6 +7,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .imagem_logo_mobile{
@@ -30,6 +31,10 @@
     gap: 20px;
 }
 
+.menu :hover{
+    opacity: 80%;
+}
+
 .item-navbar{
     color: white;
     font-size: 1em;
@@ -41,7 +46,7 @@
 }
 
 #conteudo-principal{
-    background: url(/images/background.svg) no-repeat center center;
+    background: url(/images/backgroung\ jpg.jpg) no-repeat center center;
     height: 92vh;
     background-size: cover;
     display: flex;
