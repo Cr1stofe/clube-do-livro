@@ -12,7 +12,6 @@
 
 .navbar{
     display: flex;
-    height: 9vh;
     justify-content: space-around;
     background-color: #3F0C22;
     flex-direction:row;
@@ -42,12 +41,15 @@
 }
 
 #conteudo-principal{
-    background: url(/images/background.jpg) no-repeat center center;
-    height: 91vh;
+    background-image: url(/images/background.jpg);
+    height: 100vh;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align:left;
 }
 
 .caixa-central{
