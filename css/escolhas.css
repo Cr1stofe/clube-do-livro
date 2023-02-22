@@ -29,7 +29,7 @@
 
 .item-navbar{
     color: white;
-    font-size: 14px;
+    font-size: 1em;
     letter-spacing: 1px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 #conteudo-principal{
-    background-image: url(/images/background.jpg);
+    background-image: url(background.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
