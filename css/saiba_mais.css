@@ -25,8 +25,11 @@ body{
     flex-direction:row;
     gap: 10px;
     font-family: 'Gloock', serif;
-    text-transform: uppercase;
     align-items: center;
+}
+
+.item-navbar-d:hover{
+    opacity: 70%;
 }
 
 .menu{
@@ -105,6 +108,7 @@ body{
     margin: 10px;
     padding: 10px;
     opacity: 90%;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .menu :hover{
@@ -116,7 +120,6 @@ body{
     flex-direction: column;
     align-items:center;
     row-gap: 40px;
-    opacity: none;
 }
 
 .titulo-principal{
@@ -137,7 +140,6 @@ body{
     border-radius: 25px;
     border: 0;
     box-shadow: 1px 1px 5px 1px black;
-    cursor: pointer;
     padding: 10px;
 }
 
@@ -179,4 +181,16 @@ body{
     .dropdown_menu{
         display: block;
     }
+
+    .caixa-central{
+        scale: 0.8;
+    }
+}
+
+@media (max-width:550px) {
+    .caixa-central{
+        scale: 0.6;
+        height: fit-content;
+    }
+
 }

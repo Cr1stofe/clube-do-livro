@@ -25,8 +25,11 @@ body{
     flex-direction:row;
     gap: 10px;
     font-family: 'Gloock', serif;
-    text-transform: uppercase;
     align-items: center;
+}
+
+.item-navbar-d:hover{
+    opacity: 70%;
 }
 
 .menu{
@@ -109,6 +112,7 @@ body{
     margin: 10px;
     padding: 10px;
     opacity: 90%;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .caixa-itens{
@@ -178,4 +182,16 @@ body{
     .dropdown_menu{
         display: block;
     }
+
+    .caixa-central{
+        scale: 0.8;
+    }
+}
+
+@media (max-width:550px) {
+    .caixa-central{
+        scale: 0.6;
+        height: fit-content;
+    }
+
 }

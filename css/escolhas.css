@@ -20,43 +20,17 @@ body{
 
 .navbar{
     display: flex;
-    height: 9vh;
     justify-content: space-around;
     background-color: #3F0C22;
     flex-direction:row;
     gap: 10px;
     font-family: 'Gloock', serif;
-    text-transform: uppercase;
     align-items: center;
 }
 
 .menu{
     display: flex;
     gap: 20px;
-}
-
-.item-navbar{
-    color: white;
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-
-.imagem_logo{
-    height: 60px;
-}
-
-.dropdown_menu li{
-    list-style-type:none;
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item-navbar-d{
-    color:white;
-    font-size: 18px;
-    letter-spacing: 1px;
 }
 
 .dropdown{
@@ -79,8 +53,40 @@ body{
     z-index: 5;
 }
 
+.item-navbar-d:hover{
+    opacity: 70%;
+}
+
 .dropdown_menu.open{
     height: 240px;
+}
+
+.menu :hover{
+    opacity: 80%;
+}
+
+.item-navbar{
+    color:white;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.dropdown_menu li{
+    list-style-type:none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-navbar-d{
+    color:white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.imagem_logo{
+    height: 60px;
 }
 
 #conteudo-principal{
@@ -90,12 +96,12 @@ body{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align:left;
 }
 
 .texto-principal{
-    padding-left: 200px;
+    padding: 200px;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .titulo-principal{
@@ -129,7 +135,7 @@ body{
     font-family: 'Antonio', sans-serif;
     background-color:#3F0C22;
     color: white;
-    height: 60px;
+    height: 6vh;
     font-size: 13px;
     letter-spacing: 2px;
     align-items: center;
@@ -155,5 +161,21 @@ body{
 
     .dropdown_menu{
         display: block;
+    }
+
+    .texto-principal{
+        padding: 100px;
+        backdrop-filter: blur(5px);
+        background: rgba(63, 12, 34, 0.3);
+        border-radius: 60px;
+        scale: 0.8;
+    }
+
+}
+
+@media (max-width:550px) {
+    .texto-principal{
+        scale: 0.6;
+        height: fit-content;
     }
 }

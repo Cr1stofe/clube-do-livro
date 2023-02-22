@@ -25,7 +25,6 @@ body{
     flex-direction:row;
     gap: 10px;
     font-family: 'Gloock', serif;
-    text-transform: uppercase;
     align-items: center;
 }
 
@@ -52,6 +51,10 @@ body{
     overflow: hidden;
     transition:0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 5;
+}
+
+.item-navbar-d:hover{
+    opacity: 70%;
 }
 
 .dropdown_menu.open{
@@ -168,4 +171,11 @@ body{
         scale: 0.8;
     }
 
+}
+
+@media (max-width:550px) {
+    .texto-principal{
+        scale: 0.6;
+        height: fit-content;
+    }
 }
